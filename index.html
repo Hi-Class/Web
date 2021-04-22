@@ -2,16 +2,33 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi Class</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/vue.js"></script>
 </head>
 <body>
-    <div id="container">
-     
-        <canvas id="c"></canvas>
-    </div>  
+    <header>
+        <h1>Hi Class</h1>
+    </header>
+    <section class="speakerBox" v-if="load">
+        <video id="video" width="320px" height="240px" 
+        autoplay muted loop :src="mp4Url">
+        </video>
+        <div class="itemBox">
+            <div class="videoBox">
+                <img :src="imgUrl" v-if="imgUrl">  
+            </div>
+            <div class="gifBox">
+                <gif-items v-for="gifs in gifsData" 
+                           :key="gifs.id"
+                           :gifs="gifs">
+                </gif-items>
+            </div>
+        </div>  
+        <canvas id="myCanvas"></canvas>
+    </section>  
+    <script src="./src/js/controller.js"></script>
     <script type="module" src="./src/js/script.js"></script>
 </body>
 </html>

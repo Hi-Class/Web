@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "InkLipquid";
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'WandohopeR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Independence_hall';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Independence_hall.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.svgBox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    overflow: visible;
+}
+
+.textSvg {
+    stroke: #000000;
+    stroke-width: 0.1;
+    stroke-dasharray: 300;
+    stroke-dashoffset: -300;
+    font-size: 50px;
+    fill: none;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+
+.textSvg.bottom {
+    stroke-dasharray: 500;
+    stroke-dashoffset: -500;
+}
+/* 
+.textSvg:hover {
+
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset .6s ease-out, fill .6s; 
+    fill: transparent;
+  } */
+
+  /* @keyframes textAnimate {
+      0% {
+        stroke-dashoffset: -500;
+        transition: stroke-dashoffset .9s ease-out, fill 1s; 
+        fill: transparent;
+      }
+
+      70% {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset .6s ease-out, fill .6s; 
+      }
+
+      85% {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset .6s ease-out, fill .6s; 
+      }
+
+      90% {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset .6s ease-out, fill .6s; 
+      }
+  } */
+  
+  
