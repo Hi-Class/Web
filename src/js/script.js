@@ -138,7 +138,7 @@ function main() {
     http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             //통신 성공시 구현부분
-           
+           console.log('success');
         }
     }
     http.open("POST", "./lib/sendUrl.php", true);
